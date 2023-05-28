@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="APP_1" parent="Theme.AppCompat.DayNight.DarkActionBar">
+
+        <item name="android:colorPrimary" >#F3CACA</item>
+        <item name="android:colorPrimaryDark" >#8E8080</item>
+        <item name="android:colorAccent" >#3A3333</item>
+
+    </style>
+
+
+
+
+</resources>
