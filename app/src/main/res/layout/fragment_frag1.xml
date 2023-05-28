@@ -13,7 +13,9 @@
         android:elevation="30dp"
         android:text="Home"
         android:textAlignment="textStart"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
@@ -22,7 +24,9 @@
         android:elevation="30dp"
         android:text="Home"
         android:textAlignment="textStart"
-        tools:layout_editor_absoluteY="66dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
     <Button
         android:id="@+id/button3"
@@ -31,55 +35,53 @@
         android:elevation="30dp"
         android:text="Home"
         android:textAlignment="textStart"
-        tools:layout_editor_absoluteY="116dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button4"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
         android:elevation="30dp"
         android:text="Home"
         android:textAlignment="textStart"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="49dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
         android:id="@+id/button5"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
         android:elevation="30dp"
         android:text="Home"
         android:textAlignment="textStart"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
         android:id="@+id/button6"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
         android:elevation="30dp"
         android:text="Home"
         android:textAlignment="textStart"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <Button
         android:id="@+id/button7"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
         android:elevation="30dp"
         android:text="Home"
         android:textAlignment="textStart"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

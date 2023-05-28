@@ -38,7 +38,7 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:src="@drawable/ic_home"
-            android:background="@drawable/fragment_button"/>
+            android:background="@drawable/button_selector"/>
         <ImageButton
             android:id="@+id/frag_btn_2"
             android:layout_marginLeft="3dp"
@@ -46,7 +46,7 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:src="@drawable/ic_fav"
-            android:background="@drawable/fragment_button"/>
+            android:background="@drawable/button_selector"/>
         <ImageButton
             android:id="@+id/frag_btn_3"
             android:layout_marginLeft="3dp"
@@ -54,7 +54,7 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:src="@drawable/ic_social"
-            android:background="@drawable/fragment_button"/>
+            android:background="@drawable/button_selector"/>
         <ImageButton
             android:id="@+id/frag_btn_4"
             android:layout_marginLeft="3dp"
@@ -62,7 +62,7 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:src="@drawable/ic_search"
-            android:background="@drawable/fragment_button"/>
+            android:background="@drawable/button_selector"/>
 
     </LinearLayout>
 
