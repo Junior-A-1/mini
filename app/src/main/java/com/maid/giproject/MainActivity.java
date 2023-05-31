@@ -88,4 +88,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void button_1(View v){
+        Intent intent = new Intent(MainActivity.this, Circket.class);
+        startActivity(intent);
+    }
+
 }

@@ -55,14 +55,15 @@
             android:layout_height="60dp"
             android:src="@drawable/ic_social"
             android:background="@drawable/button_selector"/>
+
         <ImageButton
             android:id="@+id/frag_btn_4"
-            android:layout_marginLeft="3dp"
-            android:elevation="10dp"
             android:layout_width="100dp"
             android:layout_height="60dp"
-            android:src="@drawable/ic_search"
-            android:background="@drawable/button_selector"/>
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_selector"
+            android:elevation="10dp"
+            android:src="@drawable/ic_search" />
 
     </LinearLayout>
 

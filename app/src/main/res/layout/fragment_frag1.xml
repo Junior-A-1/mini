@@ -22,7 +22,8 @@
         android:layout_width="411dp"
         android:layout_height="50dp"
         android:elevation="30dp"
-        android:text="Home"
+        android:text="Circket"
+        android:onClick="button_1"
         android:textAlignment="textStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,6 +35,7 @@
         android:layout_height="50dp"
         android:elevation="30dp"
         android:text="Home"
+
         android:textAlignment="textStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

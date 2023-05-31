@@ -11,4 +11,6 @@
         android:text="im frag 2"
         android:textSize="50dp"/>
 
+
+
 </FrameLayout>

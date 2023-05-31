@@ -98,6 +98,8 @@ public class frag4 extends Fragment {
                 getString(R.string.head_10),
         };
 
+
+
         imageResourceID = new int[]{
                 R.drawable.a,
                 R.drawable.b,
