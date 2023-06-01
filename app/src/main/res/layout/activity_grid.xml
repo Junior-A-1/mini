@@ -5,14 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:orientation="vertical">
-
 
         <ImageView
             android:layout_width="wrap_content"
@@ -20,15 +16,18 @@
             android:src="@drawable/slogo"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:text="Tap your favourite leagues"
             android:textSize="12dp"
             android:layout_gravity="center"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp">
+
             <Button
                 android:id="@+id/btn_show_favorites"
                 android:layout_width="wrap_content"
@@ -43,26 +42,23 @@
 
             <TextView
                 android:id="@+id/tv_favorites"
-                android:layout_width="250dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-
+                android:layout_weight="1"
                 android:textSize="16sp"
                 android:textStyle="italic"
                 android:textColor="@color/black"
                 android:padding="8dp" />
 
-
         </LinearLayout>
-
-
-
 
     </LinearLayout>
 
     <GridView
         android:id="@+id/grid_view"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:numColumns="3"
         android:verticalSpacing="8dp"
         android:horizontalSpacing="8dp"
@@ -75,7 +71,7 @@
         android:layout_height="30dp"
         android:text="Skip"
         android:textSize="10dp"
-        android:onClick="skiptoMainActivity"
+        android:onClick="skip"
         android:textColor="@color/black"
         android:backgroundTint="@color/white"
         android:layout_gravity="end"/>

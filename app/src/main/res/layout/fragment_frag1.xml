@@ -1,89 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".frag1">
+    tools:context=".frag1"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:elevation="10dp"
+    android:clickable="true"
+    >
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
-        android:elevation="30dp"
         android:text="Home"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:drawableStart="@drawable/ic_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
-        android:elevation="30dp"
-        android:text="Circket"
-        android:onClick="button_1"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        android:text="Cricket"
+        android:drawableStart="@drawable/ic_cri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+
+         />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
-        android:elevation="30dp"
-        android:text="Home"
-
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        android:drawableStart="@drawable/ic_football"
+        android:text="EPL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+         />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
-        android:elevation="30dp"
-        android:text="Home"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        android:text="FOOTBALL"
+        android:drawableStart="@drawable/ic_football"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+         />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
-        android:elevation="30dp"
-        android:text="Home"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        android:text="FORMULA 1"
+        android:drawableStart="@drawable/ic_f1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+         />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
-        android:elevation="30dp"
-        android:text="Home"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        android:text="GOLF"
+        android:drawableStart="@drawable/ic_golf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+
+        />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="411dp"
-        android:layout_height="50dp"
-        android:elevation="30dp"
-        android:text="Home"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        android:text="NBA"
+        android:drawableStart="@drawable/ic_basketball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+         />
+
+    <Button
+        android:id="@+id/button8"
+        android:drawableStart="@drawable/ic_hockey"
+        android:text="NHL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+         />
+
+    <Button
+        android:id="@+id/button9"
+        android:text="TENNIS"
+        android:drawableStart="@drawable/ic_tennis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

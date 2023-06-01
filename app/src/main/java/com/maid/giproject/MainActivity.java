@@ -9,10 +9,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageButton IMG1,FRAG_BTN_1,FRAG_BTN_2,FRAG_BTN_3,FRAG_BTN_4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         FRAG_BTN_2 = findViewById(R.id.frag_btn_2);
         FRAG_BTN_3 = findViewById(R.id.frag_btn_3);
         FRAG_BTN_4 = findViewById(R.id.frag_btn_4);
-
 
 
         FRAG_BTN_1.setOnClickListener(new View.OnClickListener() {
@@ -40,12 +41,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                frag2 frag2 = new frag2();
+                String m = getIntent().getStringExtra("mydata");
+                frag2 fragment = frag2.newInstance(m);
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.ll_2,frag2);
+                fragmentTransaction.replace(R.id.ll_2, fragment);
                 fragmentTransaction.commit();
             }
         });
+
+
 
         FRAG_BTN_3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,10 +78,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    public void img(View v){
-//        Intent intent = new Intent(MainActivity.this, Activity1.class );
-//        startActivity(intent);
-//    }
+    public void img(View v){
+        Intent intent = new Intent(MainActivity.this, GridActivity.class );
+        startActivity(intent);
+    }
 
     private void replaceFragment(Fragment fragment) {
 
@@ -88,9 +92,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void button_1(View v){
-        Intent intent = new Intent(MainActivity.this, Circket.class);
-        startActivity(intent);
+    private Bundle createBundleWithData(String myData) {
+        Bundle bundle = new Bundle();
+        bundle.putString("data", myData);
+        return bundle;
     }
 
 }

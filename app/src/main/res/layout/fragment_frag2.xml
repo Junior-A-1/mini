@@ -1,16 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".frag2">
+    android:orientation="vertical"
+
+    android:background="@drawable/ss">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="im frag 2"
-        android:textSize="50dp"/>
+        android:layout_height="50dp"
+        android:text="Favourites"
+        android:textAlignment="textStart"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:drawableStart="@drawable/ic_fav"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="aaaa"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        />
 
-
-
-</FrameLayout>
+</LinearLayout>

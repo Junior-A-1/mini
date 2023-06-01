@@ -23,7 +23,7 @@ import java.util.List;
 public class GridActivity extends AppCompatActivity {
 
     private List<Sport> sportsList;
-    private TextView favoritesTextView;
+    private TextView favoritesTextView,tv_favorite;
     private Button showFavoritesButton;
     private GridView gridView;
     private SharedPreferences sharedPreferences;
@@ -33,6 +33,7 @@ public class GridActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid);
 
+        tv_favorite = findViewById(R.id.tv_favorites);
         gridView = findViewById(R.id.grid_view);
         favoritesTextView = findViewById(R.id.tv_favorites);
         showFavoritesButton = findViewById(R.id.btn_show_favorites);
@@ -49,6 +50,7 @@ public class GridActivity extends AppCompatActivity {
         sportsList.add(new Sport("EPL", R.drawable.epl));
         sportsList.add(new Sport("Masters Golf", R.drawable.golf));
         sportsList.add(new Sport("F1", R.drawable.formula));
+
 
         // Add more sports as needed
 
@@ -86,10 +88,7 @@ public class GridActivity extends AppCompatActivity {
     }
 
 
-    public void skiptoMainActivity(View v){
-        Intent intent = new Intent(GridActivity.this,MainActivity.class);
-        startActivity(intent);
-    }
+
 
     private int countFavorites(List<Sport> sportsList) {
         int count = 0;
@@ -154,6 +153,14 @@ public class GridActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+
+    public void skip(View v){
+        Intent intent = new Intent(GridActivity.this,MainActivity.class);
+        intent.putExtra("mydata",tv_favorite.getText().toString());
+        startActivity(intent);
+
     }
 
 

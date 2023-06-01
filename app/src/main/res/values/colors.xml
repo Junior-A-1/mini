@@ -6,4 +6,6 @@
     <color name= "colorPrimaryDark" >#8E8080</color>
     <color name="colorAccent" >#3A3333</color>
 
+    <color name="darkGreen" >#31421D</color>
+
 </resources>
