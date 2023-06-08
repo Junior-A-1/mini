@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +12,11 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
 
     ImageButton IMG1,FRAG_BTN_1,FRAG_BTN_2,FRAG_BTN_3,FRAG_BTN_4;
 
@@ -19,11 +24,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         IMG1 = findViewById(R.id.img_1);
         FRAG_BTN_1 = findViewById(R.id.frag_btn_1);
         FRAG_BTN_2 = findViewById(R.id.frag_btn_2);
         FRAG_BTN_3 = findViewById(R.id.frag_btn_3);
         FRAG_BTN_4 = findViewById(R.id.frag_btn_4);
+
+
+
 
 
         FRAG_BTN_1.setOnClickListener(new View.OnClickListener() {

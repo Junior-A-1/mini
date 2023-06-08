@@ -9,6 +9,7 @@ import android.view.ViewTreeObserver;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,18 +21,23 @@ import com.maid.giproject.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GridActivity extends AppCompatActivity {
+public class GridActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
     private List<Sport> sportsList;
     private TextView favoritesTextView,tv_favorite;
     private Button showFavoritesButton;
     private GridView gridView;
     private SharedPreferences sharedPreferences;
+    private SearchView searchView;
+    private SportAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid);
+
+        searchView = findViewById(R.id.searchView);
+        searchView.setOnQueryTextListener(this);
 
         tv_favorite = findViewById(R.id.tv_favorites);
         gridView = findViewById(R.id.grid_view);
@@ -39,6 +45,7 @@ public class GridActivity extends AppCompatActivity {
         showFavoritesButton = findViewById(R.id.btn_show_favorites);
 
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+
 
         sportsList = new ArrayList<>();
         sportsList.add(new Sport("Football", R.drawable.football));
@@ -51,6 +58,8 @@ public class GridActivity extends AppCompatActivity {
         sportsList.add(new Sport("Masters Golf", R.drawable.golf));
         sportsList.add(new Sport("F1", R.drawable.formula));
 
+        adapter = new SportAdapter(this, sportsList);
+        gridView.setAdapter(adapter);
 
         // Add more sports as needed
 
@@ -85,6 +94,19 @@ public class GridActivity extends AppCompatActivity {
         });
 
         loadFavorites(); // Load favorites when the app starts
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        // Handle search query submission (if needed)
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        // Filter the data based on the search query
+        adapter.getFilter().filter(newText);
+        return true;
     }
 
 
